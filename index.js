@@ -19,7 +19,7 @@ app.use((req, res, next) => {
     next();
 })
 
-app.get('/course/view',async(req,res)=>{
+app.get('/api/view',async(req,res)=>{
     try {
         let result = await Courseinfo.find();
         res.json(result);
